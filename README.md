@@ -95,8 +95,9 @@ Método: **POST**
 ### **Request**
 
 _Headers_
-| Key | Value | Descrição |
-|-----|------|-----------|
+
+| Key           | Value             | Descrição                 |
+|---------------|-------------------|---------------------------|
 | Authorization | Bearer {tokenJWT} | Autenticação para request |
 
 _Request body_
