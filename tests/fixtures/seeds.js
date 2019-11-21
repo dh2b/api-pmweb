@@ -15,22 +15,12 @@ const consulta = {
 
 const retornoDb = [
   {
-    color: "PRETO",
-    order_date: null,
-    order_id: 1028407273,
     price: 10.5,
-    product_sku: 609127401235,
-    quantity: 2,
-    SIZE: "35"
+    quantity: 2
   },
   {
-    color: "PRETO",
-    order_date: null,
-    order_id: 1028407274,
     price: 5.0,
-    product_sku: 609127401236,
-    quantity: 2,
-    SIZE: "35"
+    quantity: 2
   }
 ];
 

@@ -66,9 +66,8 @@ const orderItems = async (req, res) => {
     const dataFinal = req.body.dataFinal;
 
     const result = await knex(ORDER_ITEMS)
-      .select()
+      .select("price", "quantity")
       .whereBetween("order_date", [dataInicial, dataFinal])
-      .orderBy("order_date")
       .catch(err => {
         console.log(err);
         throw {
