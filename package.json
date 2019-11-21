@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node src/server/server.js",
     "start-watch": "nodemon --exec \"npm start\"",
-    "test": "env-cmd jest --coverage --watch --runInBand"
+    "test": "env-cmd jest --color --coverage --watchAll=false"
   },
   "jest": {
     "testEnvironment": "node"

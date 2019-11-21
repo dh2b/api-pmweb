@@ -13,15 +13,16 @@ Serviço REST atendento os requisitos do teste técnido para a empresa pmweb;
 
 Para o funcionamento do serviço, é necessário a inclusão de um arquivo **.env** no diretório raiz do programa, contendo as seguinte variáveis:
 
-| Variável    | Descrição                                          |
-| ----------- | -------------------------------------------------- |
-| PORT        | Porta que será usada pela aplicação                |
-| DB_HOST     | Hostname para conexão com o banco de dados         |
-| DB_NAME     | Nome do banco de dados que será acessado           |
-| DB_USER     | Username para acesso ao banco de dados             |
-| DB_PASSWORD | Senha para acesso ao banco de dados                |
-| JWT_KEY     | Chave que será usavada para criação dos tokens JWT |
-| JWT_TIME    | Tempo de expiração dos tokens JWT                  |
+| Variável      | Descrição                                              |
+| ------------- | ------------------------------------------------------ |
+| PORT          | Porta que será usada pela aplicação                    |
+| DB_HOST       | Hostname para conexão com o banco de dados             |
+| DB_NAME       | Nome do banco de dados que será acessado               |
+| DB_USER       | Username para acesso ao banco de dados                 |
+| DB_PASSWORD   | Senha para acesso ao banco de dados                    |
+| JWT_KEY       | Chave que será usavada para criação dos tokens JWT     |
+| JWT_TIME      | Tempo de expiração dos tokens JWT                      |
+| AUTH_PASSWORD | Senha de acesso para autenticaçao e envio do token JWT |
 
 Dentro do código há o arquivo **.env.default** que serve de referência de localização e variáveis que deverão conter dentro do arquivo **.env** que deverá ser criado.
 
@@ -97,7 +98,7 @@ Método: **POST**
 _Headers_
 
 | Key           | Value             | Descrição                 |
-|---------------|-------------------|---------------------------|
+| ------------- | ----------------- | ------------------------- |
 | Authorization | Bearer {tokenJWT} | Autenticação para request |
 
 _Request body_
